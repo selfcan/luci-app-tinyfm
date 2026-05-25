@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: GPL-3.0
 #
-# Copyright (C) 2022-2025 muink <https://github.com/muink>
+# Copyright (C) 2022-2025 Maizil41 <https://github.com/maizil41>
 
 include $(TOPDIR)/rules.mk
 
-LUCI_NAME:=luci-app-tinyfilemanager
+LUCI_NAME:=luci-app-tinyfm
 PKG_VERSION:=2.6
 PKG_RELEASE:=20251224
 
@@ -16,7 +16,7 @@ LUCI_MAINTAINER:=OpenWrt Community
 PKG_UNPACK=$(CURDIR)/.prepare.sh $(PKG_NAME) $(CURDIR) $(PKG_BUILD_DIR)
 
 define Package/$(LUCI_NAME)/conffiles
-/etc/config/tinyfilemanager
+/etc/config/tinyfm
 endef
 
 define Package/$(LUCI_NAME)/postinst
